@@ -2,9 +2,8 @@
 
 [Departure Mono](https://github.com/rektdeckard/departure-mono) by
 [Helena Zhang](https://helenazhang.com) is one of my favorite pixel fonts.
-Although it is a 7×14 font, it has always bothered my OCD that I have to set it
-to `11px` (or a multiple of 11) for its design pixels to align with screen
-pixels.
+Although it is a 7×14 font, it always bugged me that I had to set it to `11px`
+for the pixels to line up properly.
 
 I ran into the same confusing behavior described in
 [upstream issue #24](https://github.com/rektdeckard/departure-mono/issues/24):
