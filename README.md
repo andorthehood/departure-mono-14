@@ -4,17 +4,21 @@
 [Helena Zhang](https://helenazhang.com) is one of my favorite pixel fonts. But
 it has always bothered my OCD
 that I have to set it to `11px` (or a multiple of 11) for its design pixels to
-align with screen pixels. I ran into the same confusing behavior described in
+align with screen pixels. 
+
+I ran into the same confusing behavior described in
 [upstream issue #24](https://github.com/rektdeckard/departure-mono/issues/24):
 the glyphs live on a 7×14 grid, yet setting the font to `14px` does not produce
 a one-to-one mapping between the font's pixels and screen pixels. At `11px`,
 the pixels align, while the glyph cell is effectively 7×14 screen pixels.
 
-Departure Mono 14 resolves that mismatch cleanly. It preserves the glyphs and
+Departure Mono 14 resolves that mismatch, it preserves the glyphs and
 OpenType behavior of Departure Mono 1.500, but stores them as human-readable
 7×14 bitmap sources and rebuilds the font with a 700-unit em. As a result, one
 design pixel maps exactly to one CSS pixel at
-`font-size: 14px`. As a bonus, the project also produces a BDF version for
+`font-size: 14px`. 
+
+As a bonus, the project also produces a BDF version for
 environments that support true bitmap fonts.
 
 ## Downloads
