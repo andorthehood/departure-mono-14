@@ -25,6 +25,8 @@ environments that support true bitmap fonts.
 Ready-to-use BDF, OTF, and WOFF2 files are published on the
 [GitHub Releases page](../../releases).
 
+![Departure Mono 14 glyph specimen](assets/glyphs.png)
+
 ## Source layout
 
 The human-readable files under `glyphs/` are the canonical font source. Each
