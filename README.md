@@ -22,6 +22,8 @@ environments that support true bitmap fonts.
 Ready-to-use BDF, OTF, and WOFF2 files are published on the
 [GitHub Releases page](../../releases).
 
+## Source layout
+
 The human-readable files under `glyphs/` are the canonical font source. Each
 glyph is stored as a visible 7×14 grid in the open
 [YAFF 1.0 format](https://github.com/robhagemans/monobit/blob/master/YAFF.md):
@@ -44,8 +46,6 @@ u+0041:
     .......
     .......
 ```
-
-## Source layout
 
 - `glyphs/uXXXX-uXXXX.yaff` contains the 1,079 directly encoded Unicode glyphs,
   divided into 256-codepoint pages.
