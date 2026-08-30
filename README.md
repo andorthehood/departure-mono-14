@@ -10,10 +10,10 @@ the glyphs live on a 7×14 grid, yet setting the font to `14px` does not produce
 a one-to-one mapping between the font's pixels and screen pixels. At `11px`,
 the pixels align, while the glyph cell is effectively 7×14 screen pixels.
 
-Departure Mono 14 is my attempt to resolve that mismatch cleanly. It preserves
-the glyphs and OpenType behavior of Departure Mono 1.500, but stores them as
-human-readable 7×14 bitmap sources and rebuilds the font with a 700-unit em.
-As a result, one design pixel maps exactly to one CSS pixel at
+Departure Mono 14 resolves that mismatch cleanly. It preserves the glyphs and
+OpenType behavior of Departure Mono 1.500, but stores them as human-readable
+7×14 bitmap sources and rebuilds the font with a 700-unit em. As a result, one
+design pixel maps exactly to one CSS pixel at
 `font-size: 14px`. As a bonus, the project also produces a BDF version for
 environments that support true bitmap fonts.
 
