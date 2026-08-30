@@ -40,10 +40,6 @@ u+0041:
     .......
 ```
 
-The original OTF is not part of the source tree and is not required to build
-the font. Its upstream location and SHA-256 are recorded in
-`source/provenance.json`.
-
 ## Source layout
 
 - `glyphs/uXXXX-uXXXX.yaff` contains the 1,079 directly encoded Unicode glyphs,
