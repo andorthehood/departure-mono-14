@@ -1,9 +1,8 @@
 # Departure Mono 14
 
 [Departure Mono](https://github.com/rektdeckard/departure-mono) by
-[Helena Zhang](https://helenazhang.com) is one of my favorite pixel fonts.
-Although it is a 7×14 font, it always bugged me that I had to set it to `11px`
-for the pixels to line up properly.
+[Helena Zhang](https://helenazhang.com) is my favorite pixel font, but it always [bugged](#why-14px-is-better) me that I had to set it to `11px`
+for the pixels to line up properly, even though it is a 7×14 font.
 
 I ran into the same confusing behavior described in
 [upstream issue #24](https://github.com/rektdeckard/departure-mono/issues/24):
@@ -26,6 +25,40 @@ Ready-to-use BDF, OTF, and WOFF2 files are published on the
 [GitHub Releases page](../../releases).
 
 ![Departure Mono 14 glyph specimen](assets/glyphs.png)
+
+## Why 14px is better
+
+The original font can be pixel-perfect, but at its intended size the CSS
+measurements do not agree:
+
+```css
+font-size: 11px;
+line-height: 14px;
+```
+
+The glyph cell is 7×14px, while `1em` is only 11px. In practice:
+
+- containers sized in `em` can be too short and clip the text;
+- spacing and inline icons use an 11px reference while the line occupies 14px;
+- missing glyphs come from fallback fonts at 11px and can have noticeably
+  different dimensions;
+- setting the original font to common sizes such as 14px or 16px puts its
+  design pixels on fractional CSS pixels;
+- design tools and type scales treat it as 11px even when the layout needs a
+  14px row;
+- some [accessibility and design-audit tools](https://help.siteimprove.com/support/solutions/articles/80001217848-accessibility-checks-supported-by-the-siteimprove-accessibility-for-designers)
+  flag the declared 11px size as too small, even though its line cell is 14px
+  tall.
+
+Departure Mono 14 keeps the measurements in sync:
+
+```css
+font-size: 14px;
+line-height: 14px;
+```
+
+At that size, one design pixel is one CSS pixel, the character advance is
+7px, the complete cell is 7×14px, and `1em` matches the line height.
 
 ## Source layout
 
