@@ -1,7 +1,8 @@
 # Departure Mono 14
 
-[Departure Mono](https://github.com/rektdeckard/departure-mono) by Helena
-Zhang is one of my favorite pixel fonts. But it has always bothered my OCD
+[Departure Mono](https://github.com/rektdeckard/departure-mono) by
+[Helena Zhang](https://helenazhang.com) is one of my favorite pixel fonts. But
+it has always bothered my OCD
 that I have to set it to `11px` (or a multiple of 11) for its design pixels to
 align with screen pixels. I ran into the same confusing behavior described in
 [upstream issue #24](https://github.com/rektdeckard/departure-mono/issues/24):
@@ -17,7 +18,8 @@ As a result, one design pixel maps exactly to one CSS pixel at
 environments that support true bitmap fonts.
 
 The human-readable files under `glyphs/` are the canonical font source. Each
-glyph is stored as a visible 7×14 grid in the open YAFF 1.0 format:
+glyph is stored as a visible 7×14 grid in the open
+[YAFF 1.0 format](https://github.com/robhagemans/monobit/blob/master/YAFF.md):
 
 ```text
 u+0041:
@@ -93,7 +95,8 @@ table.
 
 ## License and provenance
 
-Departure Mono is Copyright 2022–2024 Helena Zhang and licensed under the SIL
-Open Font License 1.1. The canonical YAFF glyph sources and generated fonts in
-this derivative remain under that license. This independent project is not
+Departure Mono is Copyright 2022–2024
+[Helena Zhang](https://helenazhang.com) and licensed under the SIL Open Font
+License 1.1. The canonical YAFF glyph sources and generated fonts in this
+derivative remain under that license. This independent project is not
 affiliated with or endorsed by the original author.
