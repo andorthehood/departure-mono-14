@@ -17,6 +17,12 @@ As a result, one design pixel maps exactly to one CSS pixel at
 `font-size: 14px`. As a bonus, the project also produces a BDF version for
 environments that support true bitmap fonts.
 
+## Downloads
+
+Ready-to-use BDF, OTF, and WOFF2 files are published on the
+[GitHub Releases page](../../releases). Generated font files are deliberately
+not versioned in the repository; YAFF remains the single source of truth.
+
 The human-readable files under `glyphs/` are the canonical font source. Each
 glyph is stored as a visible 7×14 grid in the open
 [YAFF 1.0 format](https://github.com/robhagemans/monobit/blob/master/YAFF.md):
@@ -64,12 +70,6 @@ u+0041:
 350 / 700 × 14px = 7px character advance
 700 / 700 × 14px = 14px ascent-plus-descent
 ```
-
-## Downloads
-
-Ready-to-use BDF, OTF, and WOFF2 files are published on the
-[GitHub Releases page](../../releases). Generated font files are deliberately
-not versioned in the repository; YAFF remains the single source of truth.
 
 ## Build and validate
 
