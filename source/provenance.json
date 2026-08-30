@@ -1,0 +1,17 @@
+{
+  "upstream": "https://github.com/rektdeckard/departure-mono",
+  "upstream_version": "1.500",
+  "upstream_asset": "public/assets/DepartureMono-Regular.otf",
+  "source_sha256": "4d53f663155cf8bf7ffc8e688776e719625f7bbb80a8d90073438b249261a2e0",
+  "extraction": {
+    "cell": [
+      7,
+      14
+    ],
+    "ascent": 11,
+    "descent": 3,
+    "grid_unit": 50,
+    "encoded_glyphs": 1079,
+    "total_glyphs": 1186
+  }
+}
