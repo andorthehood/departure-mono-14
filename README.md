@@ -57,7 +57,7 @@ u+0041:
 - `source/glyph-order.txt` fixes glyph identifiers and ordering.
 - `source/opentype-layout.ttx` preserves the original GDEF, GPOS, and GSUB
   substitutions and positioning.
-- `source/OFL.txt` contains the SIL Open Font License 1.1.
+- `OFL.txt` contains the SIL Open Font License 1.1.
 - `build_font.py` is the sole generation script. It builds every distributable
   font directly from the YAFF source and textual metadata.
 

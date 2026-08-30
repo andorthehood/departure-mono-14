@@ -51,7 +51,7 @@ def parse_args() -> argparse.Namespace:
         "--layout", type=Path, default=here / "source" / "opentype-layout.ttx"
     )
     parser.add_argument(
-        "--license", type=Path, default=here / "source" / "OFL.txt"
+        "--license", type=Path, default=here / "OFL.txt"
     )
     parser.add_argument("--output", type=Path, default=here / "dist")
     return parser.parse_args()
