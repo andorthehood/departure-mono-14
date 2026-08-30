@@ -20,8 +20,7 @@ environments that support true bitmap fonts.
 ## Downloads
 
 Ready-to-use BDF, OTF, and WOFF2 files are published on the
-[GitHub Releases page](../../releases). Generated font files are deliberately
-not versioned in the repository; YAFF remains the single source of truth.
+[GitHub Releases page](../../releases).
 
 The human-readable files under `glyphs/` are the canonical font source. Each
 glyph is stored as a visible 7×14 grid in the open
