@@ -47,8 +47,7 @@ The glyph cell is 7×14px, while `1em` is only 11px. In practice:
 - design tools and type scales treat it as 11px even when the layout needs a
   14px row;
 - some [accessibility and design-audit tools](https://help.siteimprove.com/support/solutions/articles/80001217848-accessibility-checks-supported-by-the-siteimprove-accessibility-for-designers)
-  flag the declared 11px size as too small, even though its line cell is 14px
-  tall.
+  flag the declared 11px size as too small.
 
 Departure Mono 14 keeps the measurements in sync:
 
