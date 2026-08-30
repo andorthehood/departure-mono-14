@@ -75,11 +75,6 @@ Ready-to-use BDF, OTF, and WOFF2 files are published on the
 [GitHub Releases page](../../releases). Generated font files are deliberately
 not versioned in the repository; YAFF remains the single source of truth.
 
-Each version tag triggers a clean build, validates every glyph, and publishes
-the individual font files together with a ZIP archive. The tag must match the
-font version in `build_font.py`, including the leading `v`—for example,
-`v1.500.14`.
-
 ## Build and validate
 
 ```sh
