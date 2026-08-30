@@ -1,16 +1,16 @@
 # Departure Mono 14
 
 [Departure Mono](https://github.com/rektdeckard/departure-mono) by
-[Helena Zhang](https://helenazhang.com) is one of my favorite pixel fonts. But
-it has always bothered my OCD
-that I have to set it to `11px` (or a multiple of 11) for its design pixels to
-align with screen pixels. 
+[Helena Zhang](https://helenazhang.com) is one of my favorite pixel fonts.
+Although it is a 7×14 font, it has always bothered my OCD that I have to set it
+to `11px` (or a multiple of 11) for its design pixels to align with screen
+pixels.
 
 I ran into the same confusing behavior described in
 [upstream issue #24](https://github.com/rektdeckard/departure-mono/issues/24):
-the glyphs live on a 7×14 grid, yet setting the font to `14px` does not produce
-a one-to-one mapping between the font's pixels and screen pixels. At `11px`,
-the pixels align, while the glyph cell is effectively 7×14 screen pixels.
+setting the font to `14px` does not produce a one-to-one mapping between the
+font's pixels and screen pixels. At `11px`, the pixels align, while the glyph
+cell is effectively 7×14 screen pixels.
 
 Departure Mono 14 resolves that mismatch, it preserves the glyphs and
 OpenType behavior of Departure Mono 1.500, but stores them as human-readable
